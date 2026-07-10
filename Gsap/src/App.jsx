@@ -1,20 +1,22 @@
-import { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import {Routes , Route} from "react-router-dom"
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Trainer from './Pages/Trainer'
+import Contact from './Pages/Contact'
+import Navbar from './Components/Navbar'
 
 function App() {
-  const box = useRef();
-
-  useGSAP(() => {
-    gsap.to(box.current, {
-      x: 300,
-      duration: 2,
-    });
-  });
 
   return (
-
-    <div ref={box}>Hello GSAP</div>
+    <div>
+      <Navbar/>
+    <Routes>
+      <Route path="/" element= {<Home/>}/>
+      <Route path="/about" element= {<About/>}/>
+      <Route path="/trainer" element= {<Trainer/>}/>
+      <Route path="/contact" element= {<Contact/>}/>
+    </Routes>
+    </div>
   )
   }
 
