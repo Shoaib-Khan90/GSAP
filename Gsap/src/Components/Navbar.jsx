@@ -36,8 +36,10 @@ useGSAP(() => {
       <ul className='Links li'>
         <li> <Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
+        <li><Link to="/videos">Videos</Link></li>
         <li><Link to="/trainer">Trainer</Link></li>
         <li><Link to="/contact">Contact</Link></li>
+
       </ul>
       </div>
     </div>

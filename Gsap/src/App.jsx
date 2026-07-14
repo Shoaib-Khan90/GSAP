@@ -4,7 +4,7 @@ import About from './Pages/About'
 import Trainer from './Pages/Trainer'
 import Contact from './Pages/Contact'
 import Navbar from './Components/Navbar'
-
+import Videos from './Pages/Videos'
 function App() {
 
   return (
@@ -15,6 +15,7 @@ function App() {
       <Route path="/about" element= {<About/>}/>
       <Route path="/trainer" element= {<Trainer/>}/>
       <Route path="/contact" element= {<Contact/>}/>
+      <Route path="/videos" element= {<Videos/>}/>
     </Routes>
     </div>
   )
