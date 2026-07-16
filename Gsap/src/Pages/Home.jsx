@@ -5,6 +5,7 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import About from './About'
 
 const Home = () => {
 
@@ -128,7 +129,7 @@ tl.from(".Members", {
           <span style={{marginLeft:"15px",  fontSize:"25px"}}> Endurance </span>
         </p>
       </div>
-
+      <About/>
     </div>
   );
 };
