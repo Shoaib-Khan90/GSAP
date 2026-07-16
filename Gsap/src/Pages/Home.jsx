@@ -10,22 +10,72 @@ const Home = () => {
 
   useGSAP(() => {
   const tl = gsap.timeline();
-tl.to(".Power p", {
+
+  gsap.to(".Power p", {
   xPercent: -50,
   duration: 3.5,
   ease: "none",
   repeat: -1,
 });
+
+tl.from(".Details", {
+  y:-100,
+  opacity:0,
+  duration:1,
+  delay:3.5,
+  ease:"power1.out"
+})
+
+tl.from(".Details p", {
+  y:-100,
+  opacity:0,
+  duration:0.6,
+  delay:0.2,
+  ease:"power1.out"
+})
+
+tl.from("h1", {
+  y:-100,
+  opacity:0,
+  duration:0.6,
+  delay:0.2,
+  ease:"power1.out"
+})
+
+tl.from(".p", {
+  y:-100,
+  opacity:0,
+  duration:0.6,
+  delay:0.2,
+  ease:"power1.out"
+})
+
+tl.from(".View", {
+  y:-100,
+  opacity:0,
+  duration:0.6,
+  delay:0.2,
+  ease:"power1.out"
+})
+
+tl.from(".Members", {
+  y:-100,
+  opacity:0,
+  duration:0.6,
+  delay:0.2,
+  ease:"power1.out"
+})
+
 })
 
   return (
-    <div>
+    <div className="Main">
       <div className="Body">
       <div className="Details">
         <p>Strength · Conditioning · Discipline</p>
         </div>
         <h1>Forge your <br /> strongest <br /> self</h1>
-        <p>
+        <p className="p">
           No shortcuts. No excuses. Just world-class coaching, elite <br /> equipment,
           and a community built to push you past your limits.
         </p>
