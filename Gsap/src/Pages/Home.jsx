@@ -9,8 +9,8 @@ import { useGSAP } from "@gsap/react";
 const Home = () => {
 
   useGSAP(() => {
-  // const tl = gsap.timeline();
-gsap.to(".Power p", {
+  const tl = gsap.timeline();
+tl.to(".Power p", {
   xPercent: -50,
   duration: 3.5,
   ease: "none",
@@ -19,7 +19,8 @@ gsap.to(".Power p", {
 })
 
   return (
-    <div className="Body">
+    <div>
+      <div className="Body">
       <div className="Details">
         <p>Strength · Conditioning · Discipline</p>
         </div>
@@ -52,7 +53,7 @@ gsap.to(".Power p", {
             <p>Elite Coaches</p>
           </div>
       </div>
-
+      </div>
     <div className="Power">
         <p>
           <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> <span style={{marginLeft:"15px", fontSize:"25px"}}> Power </span> <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> <span style={{marginLeft:"15px", fontSize:"25px"}}> Discipline </span> <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> 
@@ -76,8 +77,8 @@ gsap.to(".Power p", {
           <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> 
           <span style={{marginLeft:"15px",  fontSize:"25px"}}> Endurance </span>
         </p>
-        
       </div>
+
     </div>
   );
 };
