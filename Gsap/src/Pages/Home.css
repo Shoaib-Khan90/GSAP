@@ -87,3 +87,112 @@
     white-space: nowrap;
     display: inline-block;
 }
+
+/* ================= Tablet ================= */
+
+@media (max-width: 768px) {
+
+    .Details{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Details > p{
+        font-size: 24px;
+    }
+
+    .Body > h1{
+        font-size: 55px;
+        margin-left: 0;
+    }
+
+    .Body > p{
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .View{
+        margin-left: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .View > button{
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .Members{
+        margin-left: 0;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .Members > p{
+        font-size: 22px;
+    }
+
+    .Power{
+        font-size: 18px;
+    }
+
+}
+
+/* ================= Mobile ================= */
+
+@media (max-width: 480px) {
+
+    .Details{
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .Details > p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .Body > h1{
+        font-size: 34px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .Body > p{
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .View{
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .View > button{
+        width: 100%;
+        max-width: 280px;
+        font-size: 16px;
+    }
+
+    .Members{
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .Members > p{
+        font-size: 18px;
+    }
+
+    .Power{
+        font-size: 16px;
+        padding: 15px;
+    }
+
+}

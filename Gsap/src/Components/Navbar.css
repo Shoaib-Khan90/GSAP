@@ -1,37 +1,87 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 .Header{
-    gap: 20px;
     display: flex;
-    text-align: center;
     justify-content: center;
-    margin-top: 10px;  
+    align-items: center;
+    margin-top: 15px;
+    padding: 0 20px;
     text-transform: uppercase;
 }
 
-.Header>.child{
-    padding: 20px;
-    border-radius: 10px;
-    background: linear-gradient(35deg , gray , white);
-    box-shadow: 2px 2px 3px 3px gray;
-    
+.Header .child{
+    width: 100%;
+    max-width: 900px;
+    padding: 18px 25px;
+    border-radius: 12px;
+    background: linear-gradient(35deg, gray, white);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
-.Header ul {
+.Header ul{
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     gap: 50px;
-    
+    flex-wrap: wrap;
 }
 
-.Header>.child>ul>li>a{
+.Header .child ul li a{
     color: black;
     text-decoration: none;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+.Header .child ul li a:hover{
+    color: red;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 768px){
+
+    .Header .child{
+        padding: 18px;
+    }
+
+    .Header ul{
+        gap: 25px;
+    }
+
+    .Header .child ul li a{
+        font-size: 20px;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 480px){
+
+    .Header{
+        padding: 10px;
+    }
+
+    .Header .child{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .Header ul{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .Header .child ul li a{
+        font-size: 18px;
+    }
+
+}
