@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import About from './About'
+import Videos from "./Videos";
 
 const Home = () => {
 
@@ -130,6 +131,31 @@ tl.from(".Members", {
         </p>
       </div>
       <About/>
+            <div className="Power">
+        <p>
+          <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> <span style={{marginLeft:"15px", fontSize:"25px"}}> Power </span> <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> <span style={{marginLeft:"15px", fontSize:"25px"}}> Discipline </span> <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> 
+          <span style={{marginLeft:"15px",  fontSize:"25px"}}> Hustle </span>
+          <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span>
+          <span style={{marginLeft:"15px", fontSize:"25px"}}> Recovery </span> 
+          <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span>
+          <span style={{marginLeft:"15px", fontSize:"25px"}}> Mindset </span> 
+          <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> 
+          <span style={{marginLeft:"15px", fontSize:"25px"}}> Strength </span> 
+          <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> 
+          <span style={{marginLeft:"15px",  fontSize:"25px"}}> Endurance </span>
+          <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> <span style={{marginLeft:"15px", fontSize:"25px"}}> Power </span> <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> <span style={{marginLeft:"15px", fontSize:"25px"}}> Discipline </span> <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> 
+          <span style={{marginLeft:"15px",  fontSize:"25px"}}> Hustle </span>
+          <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span>
+          <span style={{marginLeft:"15px", fontSize:"25px"}}> Recovery </span> 
+          <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span>
+          <span style={{marginLeft:"15px", fontSize:"25px"}}> Mindset </span> 
+          <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> 
+          <span style={{marginLeft:"15px", fontSize:"25px"}}> Strength </span> 
+          <span style={{marginLeft:"15px", color:"gray", fontSize:"25px"}}> ✦ </span> 
+          <span style={{marginLeft:"15px",  fontSize:"25px"}}> Endurance </span>
+        </p>
+      </div>
+      <Videos/>
     </div>
   );
 };
